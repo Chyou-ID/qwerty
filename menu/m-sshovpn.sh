@@ -302,7 +302,8 @@ echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}
 echo "" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
-}function trial(){
+}
+function trial(){
 clear
 domen=`cat /etc/xray/domain`
 sldomain=`cat /etc/xray/dns`
