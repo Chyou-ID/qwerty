@@ -190,46 +190,36 @@ $author
 else
 TEXT="
 ◇━━━━━━━━━━━━━━━━━◇
-SSH Premium Account
+<b> SSH Premium Account</b>
 ◇━━━━━━━━━━━━━━━━━◇
-Username        :  <code>$Login</code>
-Password        :  <code>$Pass</code>
-Expired On      :  $exp
+<code>Username  :</code> <code>$Login</code>
+<code>Password  :</code> <code>$Pass</code>
+<code>Expired On:</code> $timer Minutes
 ◇━━━━━━━━━━━━━━━━━◇
-ISP             :  $ISP
-CITY            :  $CITY
-Host            :  <code>$domen</code>
-Login Limit     :  ${iplim} IP
-Port OpenSSH    :  22
-Port Dropbear   :  109, 143
-Port SSH WS     :  80, 7788, 8181, 8282
-Port SSH SSL WS :  443
-Port SSL/TLS    :  8443,8880
-Port OVPN WS SSL:  2086
-Port OVPN SSL   :  990
-Port OVPN TCP   :  1194
-Port OVPN UDP   :  2200
-Proxy Squid     :  3128
-BadVPN UDP      :  7100, 7300, 7300
+<code>ISP        :</code>  $ISP
+<code>CITY       :</code>  $CITY
+<code>Host       :</code>  <code>$domen</code>
+<code>Login Limit:</code>  ${iplim} IP
+<code>OpenSSH    :</code>  22
+<code>Dropbear   :</code>  109, 143
+<code>SSH WS     :</code>  80, 7788, 8181, 8282
+<code>SSH SSL WS :</code>  443
+<code>SSL/TLS    :</code>  8443,8880
+<code>OVPN WS SSL:</code>  2086
+<code>OVPN SSL   :</code>  990
+<code>OVPN TCP   :</code>  1194
+<code>OVPN UDP   :</code>  2200
+<code>Squid      :</code>  3128
+<code>BadVPN UDP :</code>  7100, 7300, 7300
 ◇━━━━━━━━━━━━━━━━━◇
-SSH UDP VIRAL   : <code>$domen:1-65535@$Login:$Pass</code>
+<code>SSH UDP    :</code> <code>$domen:1-65535@$Login:$Pass</code>
+<code>HTTP CUSTOM:</code> <code>$domen:80@$Login:$Pass</code>
 ◇━━━━━━━━━━━━━━━━━◇
-HTTP COSTUM WS  : <code>$domen:80@$Login:$Pass</code>
+<code>Host Slowdns:</code>  <code>$sldomain</code>
+<code>Port Slowdns:</code>  80, 443, 53
+<code>Pub Key     :</code>  <code> $slkey</code>
 ◇━━━━━━━━━━━━━━━━━◇
-Host Slowdns     :  <code>$sldomain</code>
-Port Slowdns     :  80, 443, 53
-Pub Key          :  <code> $slkey</code>
-◇━━━━━━━━━━━━━━━━━◇
-Payload WS/WSS   :
-<code>GET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: ws[crlf][crlf]</code>
-◇━━━━━━━━━━━━━━━━━◇
-OpenVPN SSL      :  http://$domen:89/ssl.ovpn
-OpenVPN TCP      :  http://$domen:89/tcp.ovpn
-OpenVPN UDP      :  http://$domen:89/udp.ovpn
-◇━━━━━━━━━━━━━━━━━◇
-Save Link Account: http://$domen:89/ssh-$Login.txt
-◇━━━━━━━━━━━━━━━━━◇
-$author
+Link akun http://$domen:89/ssh-$Login.txt
 ◇━━━━━━━━━━━━━━━━━◇
 "
 fi
