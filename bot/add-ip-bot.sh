@@ -39,6 +39,6 @@ exp2=`date -d "${exp} days" +"%Y-%m-%d"`
 data="### ${name} ${exp2} ${ip}"
 
 # Send data to hosting using HTTP POST
-curl -X POST -d "data=${data}" https://anggaalfa.my.id/izin/ip --silent --insecure > /dev/null
+curl -X POST -d "data=${data}" https://anggaalfa.my.id/izin/ip.txt --silent --insecure > /dev/null
 
 clear
